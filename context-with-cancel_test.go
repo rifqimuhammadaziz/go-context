@@ -48,5 +48,5 @@ func TestContextWithCancel(t *testing.T) {
 
 	time.Sleep(2 * time.Second)
 
-	fmt.Println("Total Goroutine:", runtime.NumGoroutine()) // goroutine leak (goroutine = 3) even loop is stoped (break)
+	fmt.Println("Total Goroutine:", runtime.NumGoroutine())
 }
